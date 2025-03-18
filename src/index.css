@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 0.65s infinite;
+}
+
+.underline-animation {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px; 
+  height: 2px; 
+  width: 0%;
+  background-color: #2563eb; 
+  transition: width 0.3s ease;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}

@@ -9,17 +9,7 @@ const About: React.FC = () => {
           <img src="/images/me.png" alt="Profile picture" className="rounded-lg shadow-md w-full" />
         </div>
         <div className="md:col-span-2 text-gray-700 space-y-4">
-        <p>
-          I am graduating from{" "} 
-          <a 
-            href="https://msu.edu/" 
-            target="_blank" 
-            className="text-blue-600 underline-animation"
-          >
-            MSU
-          </a> 
-          {" "}with a bachelor's in Computer Science this May.
-        </p>
+        <p>In May, I will be graduating from Michigan State University with a Bachelor's degree in Computer Science and a minor in Japanese.</p>
         <p>With experience in full-stack and cloud development, I am most comfortable with Java and Spring Boot for the back end and React for the front end.</p>
         <p>When I'm not coding, you can find me playing guitar, doing improvisational comedy, or dying to the same boss 100 times in Elden Ring.</p>
           <div className="pt-4">

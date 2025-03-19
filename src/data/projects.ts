@@ -44,7 +44,7 @@ export const projects: ProjectInfo[] = [
   {
     id: "personal-portfolio",
     title: "Personal Portfolio",
-    cardDescription: "This web application was built using React and is being hosted on Vercel. Vercel Functions serverlessly routes contact forms to Amazon SES.",
+    cardDescription: "This web application was built using React and is being hosted on Vercel. It uses Amazon SES to serverlessly deliver contact form submissions.",
     detailedDescription: "This web application was built using React with TypeScript and is being hosted on Vercel. Amazon API Gateway, AWS Lambda, and Amazon SES are used to securely handle contact form delivery.",
     cardImage: "/images/personal-portfolio.png",
     detailedImage: "/images/personal-portfolio.png",

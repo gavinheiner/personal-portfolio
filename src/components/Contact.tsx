@@ -88,18 +88,21 @@ const Contact: React.FC = () => {
 
     try {
       const emailData = {
+        email: formData.email,
         subject: `Contact Form Message from ${formData.name}`,
-        message: `
-          Name: ${formData.name}
-          Email: ${formData.email}
+        message: 
+`Name: ${formData.name}
+Email: ${formData.email}
+Message:
 
-          Message:
-          ${formData.message}
-        `,
+${formData.message}
+`,
         website: formData.website 
       };
 
-      const response = await fetch('/api/send-email', {
+      const API_URL = import.meta.env.VITE_API_URL;
+
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -139,7 +142,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="mb-16">
+    <section id="contact" className="mb-16 scroll-mt-16">
       <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact Me</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

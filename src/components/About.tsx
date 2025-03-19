@@ -2,7 +2,7 @@ const About: React.FC = () => {
   const skills = ["Python", "Java", "Spring Boot", "React", "TypeScript", "Amazon Web Services"];
   
   return (
-    <section id="about" className="mb-24">
+    <section id="about" className="mb-16 scroll-mt-16">
       <h2 className="text-3xl font-bold text-gray-800 mb-8">About Me</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="md:col-span-1">
@@ -27,7 +27,7 @@ const About: React.FC = () => {
             <div className="flex flex-wrap gap-2">
               {skills.map((skill, index) => (
                 <span key={index} className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm">{skill}</span>
-              ))};
+              ))}
             </div>
           </div>
         </div>

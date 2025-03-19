@@ -40,9 +40,9 @@ const Header: React.FC = () => {
   }, [displayText, isDeleting, phraseNumber, typingDelayInMilliseconds, phrases]);
 
   return (
-    <header className="py-16 md:py-32 bg-white">
+    <header className="pt-32 pb-16 md:pt-64 md:pb-48 bg-white scroll-mt-16">
       <div className="max-w-4xl mx-auto px-4 text-center">
-      <h1 className="text-3xl md:text-5xl font-bold text-gray-800 flex flex-col justify-center items-center pt-36">
+      <h1 className="text-3xl md:text-5xl font-bold text-gray-800 flex flex-col justify-center items-center">
         <div className="flex items-center">
           Hi, I'm <span className="text-blue-600 ml-2">Gavin</span>,
         </div>

@@ -2,7 +2,7 @@ import { experiences } from "../data/experiences";
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="mb-16">
+    <section id="experience" className="mb-16 scroll-mt-16">
       <h2 className="text-3xl font-bold text-gray-800 mb-8">Work Experience</h2>
       
       <div className="space-y-8">

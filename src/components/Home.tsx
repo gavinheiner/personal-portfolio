@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     <>
       <Header />
       
-      <main className="max-w-4xl mx-auto px-4 py-16">
+      <main className="max-w-4xl mx-auto px-4">
         <About />
         <Experience />
         <Projects />

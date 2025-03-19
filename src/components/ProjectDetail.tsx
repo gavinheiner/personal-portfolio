@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
+import ZoomableImage from './utility/ZoomableImage';
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -18,7 +19,7 @@ const ProjectDetail = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img 
+        <ZoomableImage
           src={project.detailedImage} 
           alt={project.title} 
           className={`w-full h-96 object-cover ${project.imageScaling}`}

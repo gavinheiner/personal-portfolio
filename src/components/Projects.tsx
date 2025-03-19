@@ -10,11 +10,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <div className="relative w-full h-48">
+      <div className="relative w-full">
         <img 
           src={project.cardImage} 
           alt={project.title} 
-          className={`max-width-768 w-100vw h-50vw object-cover ${project.imageScaling}`}
+          className={`w-full object-cover ${project.imageScaling}`}
+          style={{ height: "auto", maxHeight: "50vw" }}
         />
       </div>
       <div className="p-6">
@@ -33,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           onClick={(event) => {
             event.preventDefault();
             navigate(`/project/${project.id}`);
-
+  
             setTimeout(() => {
               window.scrollTo(0, 0);
             }, 15);

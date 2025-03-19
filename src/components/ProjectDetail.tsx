@@ -19,11 +19,13 @@ const ProjectDetail = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <ZoomableImage
-          src={project.detailedImage} 
-          alt={project.title} 
-          className={`w-full h-96 object-cover ${project.imageScaling}`}
-        />
+        <div className="h-64 md:h-auto overflow-hidden">
+          <ZoomableImage
+            src={project.detailedImage} 
+            alt={project.title}
+            imageScaling={project.imageScaling}
+          />
+        </div>
         
         <div className="p-6">
           <h1 className="text-3xl font-bold mb-2">{project.title}</h1>

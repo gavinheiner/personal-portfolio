@@ -88,15 +88,9 @@ const Contact: React.FC = () => {
 
     try {
       const emailData = {
+        name: formData.name,
         email: formData.email,
-        subject: `Contact Form Message from ${formData.name}`,
-        message: 
-`Name: ${formData.name}
-Email: ${formData.email}
-Message:
-
-${formData.message}
-`,
+        message: formData.message,
         website: formData.website 
       };
 

@@ -1,9 +1,11 @@
 export const phrases: string[] = [
   "a software engineer.",
   "a senior at MSU.",
-  "a bad chess player.",
-  "a cat person.",
   "an amateur improviser.",
-  "a Souls-like enjoyer.",
-  "a problem solver."
+  "a film photographer.",
+  "a clean code advocate.",
+  "a quick learner.",
+  "a guitarist.",
+  "a cat dad.",
+  "a D&D DM."
 ];

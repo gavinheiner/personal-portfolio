@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         if (displayText.length < currentPhrase.length) {
           setDisplayText(currentPhrase.substring(0, displayText.length + 1));
         } else {
-          setTypingDelayInMilliseconds(3500);
+          setTypingDelayInMilliseconds(2000);
           setIsDeleting(true);
         }
       }
